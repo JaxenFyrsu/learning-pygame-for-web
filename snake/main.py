@@ -1,4 +1,4 @@
-import pygame, sys, random, asyncio
+import pygame, sys, random, pygbag.aio as asyncio
 from pygame.math import Vector2
 
 pygame.init()

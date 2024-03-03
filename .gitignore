@@ -2,8 +2,10 @@ pygame/
 pygame-ce/
 pygame-win/
 pygame-linux/
-pygame-mac
+pygame-mac/
+pygame-chromeos/
 Novelist-main/build/
 crossy\ rpg\ game/build/
 rpg\ game/build/
 snake/build/
+snake/main-pygbag.py
