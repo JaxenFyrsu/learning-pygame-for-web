@@ -1,4 +1,8 @@
+pygame/
 pygame-ce/
+pygame-win/
+pygame-linux/
+pygame-mac
 Novelist-main/build/
 crossy\ rpg\ game/build/
 rpg\ game/build/
