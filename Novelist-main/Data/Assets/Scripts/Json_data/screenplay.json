@@ -1,0 +1,72 @@
+{
+  "scene_01": {
+    "background": "back_ground_01",
+    "actors": {
+      "Character_01": {
+        "character_start_position": "right",
+        "character_pose": "3",
+        "character_plan": "background_plan"
+      },
+      "Character_02": {
+        "character_start_position": "middle",
+        "character_pose": "3",
+        "character_plan": "first_plan"
+      }
+    },
+    "special_effects": false,
+    "gameplay_type": "reading",
+    "past_scene": "START",
+    "next_scene": "test_scene_02",
+    "sounds": {
+      "music_channel": false,
+      "sound_channel": "blank",
+      "voice_channel": false
+    }
+  },
+
+   "test_scene_02": {
+    "background": "back_ground_01",
+    "actors": {
+      "Character_01": {
+        "character_start_position": "middle",
+        "character_pose": "2",
+        "character_plan": "first_plan"
+      },
+      "Character_04": {
+        "character_start_position": "left",
+        "character_pose": "3",
+        "character_plan": "first_plan"
+      }
+    },
+    "special_effects": false,
+    "gameplay_type": "choice",
+    "past_scene": "scene_01",
+    "next_scene": false,
+    "sounds": {
+      "music_channel": "blank",
+      "sound_channel": false,
+      "voice_channel": false
+    }
+  },
+
+  "test_scene_03": {
+    "background": "back_ground_01",
+    "actors": {
+      "Character_02": {
+        "character_start_position": "left",
+        "character_pose": "1",
+        "character_plan": "background_plan"
+      }
+    },
+    "special_effects": false,
+    "gameplay_type": "reading",
+    "past_scene": "test_scene_02",
+    "next_scene": "FINISH",
+    "sounds": {
+      "music_channel": false,
+      "sound_channel": false,
+      "voice_channel": "blank"
+    }
+  }
+
+}
