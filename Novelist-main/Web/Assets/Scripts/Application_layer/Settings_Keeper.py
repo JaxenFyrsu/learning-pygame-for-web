@@ -1,6 +1,6 @@
 from os import path
 from sys import platform
-from tkinter import Tk
+# from tkinter import Tk
 
 from pygame import Surface, display, FULLSCREEN, RESIZABLE
 
@@ -72,7 +72,8 @@ class SettingsKeeper(SingletonPattern):
         :return: pygame.display.Surface
         """
         if self.screen_type == 'full_screen':
-            screen_size = Tk()
+#            screen_size = Tk()
+            screen_size = display.get_window_size(800, 600)
             screen_size_x, screen_size_y = \
                 screen_size.winfo_screenwidth(), \
                 screen_size.winfo_screenheight()

@@ -4,8 +4,10 @@ pygame-win/
 pygame-linux/
 pygame-mac/
 pygame-chromeos/
-Novelist-main/build/
+Novelist-main/Data/build/
+Novelist-main/Web/build
 crossy\ rpg\ game/build/
 rpg\ game/build/
 snake/build/
 snake/main-pygbag.py
+logg_file.txt
