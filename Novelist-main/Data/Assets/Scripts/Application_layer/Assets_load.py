@@ -49,7 +49,7 @@ def sound_load(*, asset_type: str, file_name: str) -> Sound:
     :param file_name: must be string with file name in '*/Sounds/*' folder.
     :return: Sound
     """
-    sound_path: str = f"{asset_root_path()}{path.join(*['Sounds', asset_type, file_name])}.mp3"
+    sound_path: str = f"{asset_root_path()}{path.join(*['Sounds', asset_type, file_name])}.ogg"
     return Sound(sound_path)
 
 
@@ -60,7 +60,7 @@ def music_load(*, asset_type: str, file_name: str) -> Sound:
     :param file_name: must be string with file name in '*/Sounds/*' folder.
     :return: Sound
     """
-    sound_path: str = f"{asset_root_path()}{path.join(*['Sounds', asset_type, file_name])}.mp3"
+    sound_path: str = f"{asset_root_path()}{path.join(*['Sounds', asset_type, file_name])}.ogg"
     # music.load(sound_path)  # TODO: music use low RAM
     return Sound(sound_path)
 

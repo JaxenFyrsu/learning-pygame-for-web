@@ -7,9 +7,6 @@ from Assets.Scripts.Application_layer.Assets_load import image_load
 from Assets.Scripts.Application_layer.Settings_Keeper import SettingsKeeper
 from Assets.Scripts.Application_layer.Game_Master import GameMaster
 from Assets.Scripts.Logging_Config import logging_config, text_for_logging
-"""
-Contains app shell code.
-"""
 
 
 def run():
@@ -18,27 +15,18 @@ def run():
     """
     app_name: str = "Visual Novel"
 
-    icon_set: dict[str] = {
-        "Windows": "win_icon",
-        "Mac_OS": "mac_icon",
-        "linux": "nix_icon"
-    }
-
     # Set game settings:
     start_settings: SettingsKeeper = SettingsKeeper()
-    type_of_system: str = start_settings.system_type
-    # Path to icons:
-    path_to_icons: str = path.join(*[
-        'User_Interface', 'Icons'
-    ])
+
+    # Path to icons (assuming icons are in a folder named 'icons' within the application directory)
+    path_to_icons = path.join('User_Interface','Icons')
+
     # Application name in window:
     display.set_caption(app_name)
-    # Icon settings:
-    display.set_icon(image_load(
-        art_name=icon_set[type_of_system],
-        file_format='png',
-        asset_type=path_to_icons
-    ))
+
+    # Icon settings (assuming a single icon named 'icon.png' exists in the 'icons' folder)
+    display.set_icon(image_load(art_name='icon', file_format='png', asset_type=path_to_icons))
+
     # Start game:
     gameplay: GameMaster = GameMaster()
     gameplay()

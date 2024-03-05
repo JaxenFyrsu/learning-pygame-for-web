@@ -1,4 +1,4 @@
-from Pygame_Visual_Novel.Data.Assets.Scripts.Application_layer.Assets_load import json_load, video_load
+from Data.Assets.Scripts.Application_layer.Assets_load import json_load, video_load
 """
 Contains the code for working with video files.
 """

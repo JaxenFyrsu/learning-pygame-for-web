@@ -4,8 +4,9 @@ pygame-win/
 pygame-linux/
 pygame-mac/
 pygame-chromeos/
-Novelist-main/Data/build/
-Novelist-main/Web/build
+Novelist-main/Old/
+Novelist-main/Data/Saves/
+Novelist-main/Web/build/
 crossy\ rpg\ game/build/
 rpg\ game/build/
 snake/build/
