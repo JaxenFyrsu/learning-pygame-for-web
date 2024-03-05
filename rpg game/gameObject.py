@@ -1,11 +1,10 @@
-import pygame
-
+from pygame import image, transform
 class GameObject:
 
     def __init__(self, x, y, width, height, image_path):
         # image
-        image = pygame.image.load(image_path)
-        self.image = pygame.transform.scale(image, (width, height))
+        image_file = image.load(image_path)
+        self.image = transform.scale(image_file, (width, height))
 
         # position and size
         self.x = x

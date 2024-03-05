@@ -1,5 +1,6 @@
-import pygbag.aio as asyncio
 import pygame
+from pygame import display, Surface
+from pygbag import aio as asyncio
 from gameObject import GameObject
 from player import Player
 from enemy import Enemy
@@ -9,13 +10,13 @@ class Game:
     def __init__(self):
         
         # Window setup
-        pygame.display.set_caption("RPG Game")
+        display.set_caption("RPG Game")
         self.size = self.width, self.height = 800, 800
-        self.screen = pygame.display.set_mode((self.size))
+        self.screen = display.set_mode((self.size))
 
         # Background
         self.bg_color = (255, 255, 255)
-        self.bg_layer = pygame.Surface(self.screen.get_size())
+        self.bg_layer = Surface(self.screen.get_size())
         self.bg_layer.fill(self.bg_color)
         self.background = GameObject(0, 0, self.width, self.height, 'assets/background.png')
 
@@ -61,7 +62,7 @@ class Game:
             self.screen.blit(enemy.image, (enemy.x, enemy.y))
                     
         # Update the display
-        pygame.display.flip()
+        display.flip()
 
     # Move the game objects
     def move_objects(self, player_dy):

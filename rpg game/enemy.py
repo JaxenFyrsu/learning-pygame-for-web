@@ -1,4 +1,4 @@
-from game import GameObject
+from gameObject import GameObject
 
 class Enemy(GameObject):
     def __init__(self, x, y, width, height, image_path, speed):

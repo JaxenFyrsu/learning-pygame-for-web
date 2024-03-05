@@ -1,4 +1,4 @@
-import pygame, pygbag.aio as asyncio  # Keep import temporarily for compatibility checks
+from pygbag import aio as asyncio  # Keep import temporarily for compatibility checks
 from game import Game
 
 async def main():
