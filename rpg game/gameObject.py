@@ -3,8 +3,7 @@ class GameObject:
 
     def __init__(self, x, y, width, height, image_path):
         # image
-        image_file = image.load(image_path)
-        self.image = transform.scale(image_file, (width, height))
+        self.image = transform.scale(image.load(image_path), (width, height))
 
         # position and size
         self.x = x
