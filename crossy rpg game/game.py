@@ -1,4 +1,4 @@
-import pygame, pygbag.aio as asyncio
+import pygame
 from gameObject import GameObject
 from player import Player
 from enemy import Enemy
@@ -12,6 +12,8 @@ class Game:
         self.white_colour = (255, 255, 255)
 
         self.game_window = pygame.display.set_mode((self.width,self.height))
+
+        self.clock = pygame.time.Clock()
 
         self.background = GameObject(0, 0, self.width, self.height, 'assets/background.png')
         self.treasure = GameObject(375, 50, 50, 50, 'assets/treasure.png')
@@ -54,7 +56,7 @@ class Game:
         for enemy in self.enemies:
             self.game_window.blit(enemy.image, (enemy.x, enemy.y))
 
-        pygame.display.flip()
+        pygame.display.update()
 
 
     def move_objects(self, player_direction):
@@ -92,7 +94,7 @@ class Game:
         return False
 
 
-    async def run_game_loop(self):
+    def run_game_loop(self):
         player_direction = 0
 
         while True:
@@ -122,7 +124,4 @@ class Game:
             if self.check_if_collided():
                 self.reset_map()
 
-            await asyncio.sleep(0)
-    
-    def start(self):
-        asyncio.run(self.run_game_loop())
+            self.clock.tick(60)

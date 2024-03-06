@@ -1,14 +1,10 @@
-import pygame, pygbag.aio as asyncio  # Keep import temporarily for compatibility checks
-
+import pygame
 from game import Game
 
-async def main():
-    
-    game = Game()
-    await game.run_game_loop()  # Assuming run_game_loop made asynchronous
+pygame.init()
 
-if __name__ == '__main__':
-    # Remove Pygame initialization for the web environment
-    # pygame.init()  # Not needed for pygbag
+game = Game()
+game.run_game_loop()
 
-    asyncio.run(main())
+pygame.quit()
+quit()
