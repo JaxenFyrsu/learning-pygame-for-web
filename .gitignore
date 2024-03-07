@@ -4,11 +4,19 @@ pygame-gb/
 pygame-win/
 pygame-linux/
 pygame-mac/
-pygame-chromeos/
 Novelist-main/Old/
+Novelist-main/Data/Assets/Scripts/__pycache__/
+Novelist-main/Data/Assets/Scripts/Application_layer/__pycache__/
+Novelist-main/Data/Assets/Scripts/Game_objects/__pycache__/
+Novelist-main/Data/Assets/Scripts/GamePlay/__pycache__/
+Novelist-main/Data/Assets/Scripts/Render/__pycache__/
+Novelist-main/Data/Assets/Scripts/Universal_computing/__pycache__/
+Novelist-main/Data/Assets/Scripts/User_Interface/__pycache__/
+Novelist-main/Data/Assets/Scripts/User_Interface/UI_Buttons/__pycache__/
+Novelist-main/Data/Assets/Scripts/User_Interface/UI_Menus/__pycache__/
 Novelist-main/Data/Saves/
 Novelist-main/Web/build/
-crossy\ rpg\ game/build/
+crossy\ rpg\ game/__pycache__/
 rpg\ game/build/
 snake/build/
 snake/main-pygbag.py
