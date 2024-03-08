@@ -1,4 +1,3 @@
-pygame-gb/
 pygame-win/
 pygame-linux/
 pygame-mac/
@@ -15,5 +14,7 @@ Novelist-main/Data/Assets/Scripts/User_Interface/UI_Menus/__pycache__/
 Novelist-main/Data/Saves/
 Novelist-main/Web/build/
 crossy\ rpg\ game/__pycache__/
+rpg\ game/__pycache__/
 rpg\ game/build/
 logg_file.txt
+result.json

@@ -4,6 +4,7 @@ from pygbag import aio as asyncio
 from gameObject import GameObject
 from player import Player
 from enemy import Enemy
+from debug import debug
 
 class Game: 
     # Initialize the game
@@ -62,6 +63,10 @@ class Game:
             self.screen.blit(enemy.image, (enemy.x, enemy.y))
                     
         # Update the display
+        debug('test')
+        # debug(pygame.mouse.get_pos())
+        # debug(pygame.mouse.get_pressed(),40)
+        # debug('mouse!', pygame.mouse.get_pos()[1], pygame.mouse.get_pos()[0])
         display.flip()
 
     # Move the game objects

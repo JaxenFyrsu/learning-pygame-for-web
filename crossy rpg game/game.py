@@ -2,6 +2,7 @@ import pygame
 from gameObject import GameObject
 from player import Player
 from enemy import Enemy
+from debug import debug
 
 class Game:
 
@@ -56,8 +57,8 @@ class Game:
         for enemy in self.enemies:
             self.game_window.blit(enemy.image, (enemy.x, enemy.y))
 
+        debug(pygame.mouse.get_pos())
         pygame.display.update()
-
 
     def move_objects(self, player_direction):
         self.player.move(player_direction, self.height)
@@ -119,7 +120,7 @@ class Game:
 
             # Update display
             self.draw_objects()
-
+            
             # Detect collisions
             if self.check_if_collided():
                 self.reset_map()
