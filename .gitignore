@@ -17,6 +17,6 @@ crossy\ rpg\ game/__pycache__/
 rpg\ game/__pycache__/
 rpg\ game/build/
 template/build/
-test-game/build/
+test_game/build/
 logg_file.txt
 result.json
