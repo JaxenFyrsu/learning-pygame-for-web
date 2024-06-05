@@ -20,3 +20,7 @@ template/build/
 test_game/build/
 logg_file.txt
 result.json
+flask
+flask_session
+alphonse
+pygame
